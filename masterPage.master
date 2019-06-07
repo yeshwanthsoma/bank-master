@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="masterPage.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    
+</head>
+<body style=" width:1500px; height:1500px ">
+    <div>
+    <form id="form1" runat="server">
+    
+<table style="font-family: Arial">
+    <tr>
+        <td colspan="2" style="width: 800px; height: 80px; text-align: center; 
+            background-color: #BDBDBD;">
+            <h1>
+                BANKING APPLICATION</h1>
+        </td>
+    </tr>
+    <tr>
+        <td style="height: 500px; background-color: #D8D8D8; width: 150px">
+            <h3>
+                &nbsp;</h3>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Home" Width="122px" />
+            <asp:Button ID="Button2"  runat="server" OnClick="Button2_Click"  Width="120px" />
+        </td>
+        <td style="height: 500px; background-color: #E6E6E6; width: 650px">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <h1>&nbsp;</h1>
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color: #BDBDBD; text-align: center">
+            <b>Copyright...</b>
+        </td>
+    </tr>
+</table>
+        
+</form>
+   </div>
+</body>
+</html>
